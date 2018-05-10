@@ -7,7 +7,7 @@
  * @param branch
  */
 def call(target, branch) {
-    def _path = 'https://github.com/tefuna/' + ${target} + '.git'
+    def _path = 'https://github.com/tefuna/' + target + '.git'
     def _credentialsId = 'github'
     def _changelog = false
     def _poll = false
