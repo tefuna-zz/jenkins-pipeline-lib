@@ -12,6 +12,6 @@ def call(target, branch) {
     def _changelog = false
     def _poll = false
     dir (target) {
-        git url: ${_path}, branch: ${branch}, credentialsId: ${_credentialsId}, changelog: ${_changelog},  poll: ${_poll}
+        git url: _path, branch: branch, credentialsId: _credentialsId, changelog: _changelog,  poll: _poll
     }
 }
